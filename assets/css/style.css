@@ -360,14 +360,97 @@ a {
 }
 
 /* =========================
-   FOOTER
+   FOOTER FIX RAPIH
+========================= */
+/* =========================
+   FOOTER FINAL FIX
 ========================= */
 .footer {
   background: #0f766e;
   color: #ffffff;
-  text-align: center;
-  padding: 18px;
+  margin-top: 80px;
+}
+
+.footer .container {
+  padding: 60px 0 30px;
+}
+
+/* GRID 3 KOLOM FIX */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* KOLOM */
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.footer-col p {
   font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  opacity: 0.95;
+}
+
+/* LIST */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* SOSIAL */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.footer-social a {
+  width: 34px;
+  height: 34px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 40px;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
 /* =========================
    LIGHTBOX GALERI FIX
@@ -406,3 +489,4 @@ a {
   color: #fff;
   cursor: pointer;
 }
+
